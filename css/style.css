@@ -1,15 +1,18 @@
+/* Général */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #1c1c1c; /* Fond sombre */
   color: #eaeaea; /* Texte clair */
+  line-height: 1.6;
 }
 
+/* Menu de navigation */
 .menu {
+  position: fixed;
   display: flex;
   justify-content: center;
-  /* min-height: 100vh; */
 }
 
 nav {
@@ -18,7 +21,7 @@ nav {
   padding: 10px 0;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Renforcement de l'ombre */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Ombre subtile */
 }
 
 nav ul {
@@ -61,8 +64,7 @@ nav ul li ul {
   opacity: 0;
   visibility: hidden;
   transition: transform 0.3s ease, opacity 0.3s ease;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Ombre subtile */
-  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   z-index: 1000;
 }
 
@@ -72,20 +74,16 @@ nav ul li:hover ul {
   transform: translateX(-50%) scaleY(1); /* Déployé */
 }
 
-nav ul li ul li {
-  width: 100%;
-}
-
 nav ul li ul li a {
   padding: 12px 16px;
-  color: #fff; /* Texte clair */
+  color: #fff;
   white-space: nowrap;
   transition: background-color 0.3s;
 }
 
 nav ul li ul li a:hover {
-  background-color: #575757; /* Fond au survol */
-  color: #ddd; /* Texte légèrement atténué */
+  background-color: #575757;
+  color: #ddd;
 }
 
 /* Section Compétences */
@@ -105,37 +103,36 @@ nav ul li ul li a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  justify-items: normal;
+  justify-items: center;
 }
 
 .competence-card {
   background-color: #333;
   border-radius: 15px;
-  padding: 20px 20px 40px 20px;
-  margin: 0.3em;
+  padding: 20px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: transform 0.5s, box-shadow 0.5s, max-height 0.5s ease; /* Transition pour max-height */
-  position: relative; /* Pour gérer la position des éléments enfants */
-  overflow: hidden; /* Cache la description qui déborde */
-  max-height: 250px; /* Hauteur initiale (ajustez selon la taille de votre contenu) */
+  transition: transform 0.5s, box-shadow 0.5s, max-height 0.5s ease;
+  position: relative;
+  overflow: hidden;
+  max-height: 250px;
 }
 
 .competence-card:hover {
-  transform: scale(1.04); /* Agrandit la carte au survol */
+  transform: scale(1.04);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-  max-height: 400px; /* Augmenter la hauteur au survol pour laisser de la place à la description */
+  max-height: 400px;
 }
 
 .competence-card img {
-  width: 100%; /* Remplit la largeur du conteneur */
-  height: 200px; /* Hauteur fixe */
-  object-fit: contain; /* Garde les proportions des images */
-  margin: 0 auto 15px; /* Centre verticalement et ajoute un espacement en bas */
-  display: block; /* Centre horizontalement */
-  border-radius: 10px; /* Coins arrondis pour un aspect harmonieux */
-  background-color: #333; /* Fond pour contraster si l'image a un fond transparent */
-  padding: 10px; /* Espacement interne autour de l'image */
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin: 0 auto 15px;
+  display: block;
+  border-radius: 10px;
+  background-color: #333;
+  padding: 10px;
 }
 
 .competence-card h3 {
@@ -148,16 +145,16 @@ nav ul li ul li a:hover {
   font-size: 1em;
   color: #ccc;
   line-height: 1.5;
-  opacity: 0; /* Cacher la description par défaut */
-  visibility: hidden; /* Cacher la description par défaut */
-  transition: opacity 0.3s ease, visibility 0s 0.3s; /* Transition fluide pour la visibilité et l'opacité */
-  padding: 10px 0; /* Ajoute de l'espacement autour du texte */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s 0.3s;
+  padding: 10px 0;
 }
 
 .competence-card:hover p {
-  opacity: 1; /* Rendre visible la description au survol */
-  visibility: visible; /* Rendre visible la description au survol */
-  transition: opacity 0.3s ease, visibility 0s 0s; /* Transition immédiate pour la visibilité */
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0s 0s;
 }
 
 /* Responsivité */
