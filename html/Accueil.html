@@ -3,62 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CV de Benjamin SERE - Étudiant en informatique, en quête d'un stage.">
+  <meta property="og:title" content="Benjamin SERE - CV">
+  <meta property="og:description" content="CV de Benjamin SERE - Étudiant en informatique, en quête d'un stage.">
+  <meta property="og:type" content="website">
   <title>Benjamin SERE - CV</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <header class="header">
+  <!-- En-tête -->
+  <header>
     <div class="menu">
       <nav>
-          <ul>
-              <li><a href="Accueil.html">Accueil</a></li>
-              <li><a href="Formation.html">Formations</a></li>
-              <li><a href="Competences.html">Compétences</a>
-                  <ul class="sous-menu">
-                      <li><a href="Competences.html#DevApplication">DevApplication</a></li>
-                      <li><a href="Competences.html#BDD">BDD</a></li>
-                      <li><a href="Competences.html#Organisation">Organisation</a></li>
-                  </ul>
-              </li>
-              <li><a href="Realisations.html">Réalisations</a></li>
-              <li><a href="Contact.html">Contact</a></li>
-          </ul>
-       </nav>
-    </div>
-    <div class="container">
-      <h1>Bienvenue sur mon CV</h1>
-      <p>Étudiant en Informatique | Développeur d'Applications en devenir</p>
-      <p>A la recherche d’un stage de 9 à 12 semaines à partir du 1er avril 2025.</p>
+        <ul>
+          <li><a href="Accueil.html" title="Retourner à la page d'accueil">Accueil</a></li>
+          <li><a href="Formation.html" title="Voir mes formations">Formations</a></li>
+          <li>
+            <a href="Competences.html" title="Découvrir mes compétences">Compétences</a>
+            <ul class="sous-menu" role="menu">
+              <li><a href="Competences.html#DevApplication" title="Développement d'applications">DevApplication</a></li>
+              <li><a href="Competences.html#BDD" title="Gestion de bases de données">BDD</a></li>
+              <li><a href="Competences.html#Organisation" title="Organisation et gestion de projet">Organisation</a></li>
+            </ul>
+          </li>
+          <li><a href="Realisations.html" title="Consulter mes réalisations">Réalisations</a></li>
+          <li><a href="Contact.html" title="Contactez-moi">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
+  <!-- Contenu principal -->
   <main>
-    <section id="profil">
-      <div class="container">
-        <h2>Profil</h2>
-        <p><strong>Nom :</strong> Benjamin SERE</p>
-        <p><strong>Âge :</strong> 18 ans</p>
-        <p><strong>Adresse :</strong> 4, rue des Orchidées, 59136 Wavrin</p>
-        <p><strong>Téléphone :</strong> 07 82 73 70 95</p>
-        <p><strong>Email :</strong> serebenjamin.tr@gmail.com</p>
-        <p><strong>Objectif :</strong> Intéressé par un poste de développeur d'application dans la chaîne de production.</p>
-      </div>
+    <!-- Introduction -->
+    <section class="container introduction">
+      <h1>Bienvenue sur mon CV</h1>
+      <p>Étudiant en Informatique | Développeur d'Applications en devenir</p>
+      <p>A la recherche d’un stage de 9 à 12 semaines à partir du 1er avril 2025.</p>
     </section>
+    <!-- Frise Chronologique -->
 
-    <section id="intro">
-      <div class="container">
-        <h2>À propos de moi</h2>
-        <p>Actuellement étudiant en BUT Informatique à l'Université de Lille, je me forme aux techniques modernes de conception et développement d'applications. Je suis motivé par le travail d'équipe, les défis techniques et l'envie de toujours apprendre et m'améliorer.</p>
+    <section class="timeline-section">
+      <h1>Mon Parcours Professionnel</h1>
+      <div class="timeline">
+        <div class="timeline-bar"></div>
+        <div class="timeline-item">
+          <h3>Développeur Web</h3>
+          <p>Jan 2022 - Présent</p>
+          <p>Développement d'applications web et de sites responsive. Travail avec des technologies modernes comme React et Node.js.</p>
+        </div>
+    
+        <div class="timeline-item">
+          <h3>Stagiaire Développeur Java</h3>
+          <p>Sept 2021 - Déc 2021</p>
+          <p>Création de fonctionnalités backend dans un projet Java EE. Expérience avec l'API JDBC et la gestion des bases de données.</p>
+        </div>
+    
+        <div class="timeline-item">
+          <h3>Développeur Front-End</h3>
+          <p>Mai 2020 - Août 2021</p>
+          <p>Conception et développement de l'interface utilisateur pour des applications web. Utilisation de HTML, CSS, JavaScript et Vue.js.</p>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <!-- Pied de page -->
+  <footer>
     <div class="container">
-      <p>&copy; 2024 Benjamin SERE | Contactez-moi à serebenjamin.tr@gmail.com</p>
+      <p>&copy; 2024 Benjamin SERE | Contactez-moi à <a href="mailto:serebenjamin.tr@gmail.com">serebenjamin.tr@gmail.com</a></p>
     </div>
   </footer>
 
+  <!-- Fichier JavaScript -->
   <script src="../js/script.js"></script>
 </body>
 </html>
