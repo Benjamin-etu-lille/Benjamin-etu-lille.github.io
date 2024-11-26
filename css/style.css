@@ -99,6 +99,51 @@ nav ul li ul li a:hover {
 
 /* Conteneur principal */
 .container {
+  width: 100%;
+  max-width: 90%;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ecf0f1; /* Gris clair */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Ombre plus douce et subtile */
+  
+  /* Flexbox pour aligner l'image et le texte */
+  display: flex;
+  justify-content: space-between; /* Sépare l'image et le texte */
+  align-items: center; /* Centre verticalement les éléments */
+  flex-direction: row-reverse; /* Inverse l'ordre des éléments, mettant l'image à droite */
+}
+
+.container .img {
+  width: 40%; /* Ajuste la largeur de l'image */
+}
+
+.container .img img {
+  width: 100%; /* L'image occupe toute la largeur du conteneur */
+  height: auto; /* Maintien du ratio de l'image */
+  border-radius: 20px; /* Bord arrondi de l'image */
+  object-fit: cover; /* Couvre la zone de l'image sans déformation */
+}
+
+.container .content {
+  width: 55%; /* Largeur du texte */
+}
+
+.container .content h3 {
+  margin-bottom: 20px; /* Espacement sous le titre */
+}
+
+.container .content ul {
+  list-style-type: disc;
+  padding-left: 20px; /* Ajout d'un peu de marge pour les puces */
+}
+
+.container .content p {
+  margin-bottom: 15px; /* Espacement entre les paragraphes */
+}
+
+
+.container-introduction {
   margin: 40px auto;
   padding: 20px;
   text-align: center;
@@ -109,7 +154,7 @@ nav ul li ul li a:hover {
   animation: fadeIn 1s ease-in-out;
 }
 
-.container h1, .container h2 {
+.container-introduction h1, .container-introduction h2 {
   color: #3498db;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
   margin-bottom: 20px;
@@ -208,35 +253,31 @@ nav ul li ul li a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  justify-items: normal;
+  justify-items: center;
 }
 
 .competence-card {
   background-color: #fff;
   border-radius: 15px;
-  padding: 20px 20px 40px 20px;
+  padding: 20px;
   margin: 0.3em;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: transform 0.5s, box-shadow 0.5s, max-height 0.5s ease;
   position: relative;
   overflow: hidden;
   max-height: 250px;
+  opacity: 1; /* Par défaut, la carte est visible */
 }
 
 .competence-card:hover {
   transform: scale(1.04);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-  max-height: 400px;
+  max-height: 400px; /* Augmenter la hauteur au survol pour afficher le texte */
 }
 
 .competence-card img {
   width: 100%;
   height: 200px;
   object-fit: contain;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
 }
 
 .competence-card img:hover {
@@ -247,6 +288,8 @@ nav ul li ul li a:hover {
   color: #3498db;
   font-size: 1.5em;
   margin: 15px 0;
+  opacity: 0; /* Le titre est caché par défaut */
+  transition: opacity 0.3s ease; /* Transition pour le titre */
 }
 
 .competence-card p {
@@ -254,7 +297,15 @@ nav ul li ul li a:hover {
   font-size: 1em;
   font-style: italic;
   margin-bottom: 15px;
+  opacity: 0; /* Le texte est caché par défaut */
+  transition: opacity 0.3s ease; /* Transition pour le texte */
 }
+
+.competence-card:hover h3,
+.competence-card:hover p {
+  opacity: 1; /* Afficher le texte et le titre lors du survol */
+}
+
 
 /* Bouton */
 button {
@@ -274,7 +325,7 @@ button:hover {
 }
 
 /* Responsivité */
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   nav {
     width: 90%;
   }
@@ -285,4 +336,25 @@ button:hover {
   .competence-section h2 {
     font-size: 2em;
   }
+
+  .container {
+    flex-direction: column; /* Empile les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+  }
+
+  .container .img {
+    width: 100%; /* L'image occupe toute la largeur sur petits écrans */
+    margin-bottom: 20px; /* Ajoute un peu d'espace sous l'image */
+  }
+
+  .container .content {
+    width: 100%; /* Le texte occupe également toute la largeur */
+  }
+
+  .container .img img {
+    display: none; /* Cache l'image lorsque l'écran est trop petit */
+  }
 }
+
+
+
