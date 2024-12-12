@@ -11,17 +11,30 @@
     <div class="menu">
         <nav>
             <ul>
-                <li><a href="Accueil.html">Accueil</a></li>
-                <li><a href="Formation.html">Formations</a></li>
-                <li><a href="Competences.html">Compétences</a>
-                    <ul class="sous-menu">
-                        <li><a href="Competences.html#DevApplication">DevApplication</a></li>
-                        <li><a href="Competences.html#BDD">BDD</a></li>
-                        <li><a href="Competences.html#Organisation">Organisation</a></li>
+                <li><a href="Accueil.html" title="Retourner à la page d'accueil">Accueil</a></li>
+                <li>
+                    <a href="Formation.html" title="Voir mes formations">Formations</a>
+                    <ul class="sous-menu" role="menu">
+                        <li><a href="Formation.html#BUT-Info" title="BUT-Info">BUT informatique</a></li>
+                        <li><a href="Formation.html#Serveur" title="Serveur">Serveur au Bet’leu</a></li>
                     </ul>
                 </li>
-                <li><a href="Realisations.html">Réalisations</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+                <li>
+                    <a href="Competences.html" title="Découvrir mes compétences">Compétences</a>
+                    <ul class="sous-menu" role="menu">
+                        <li><a href="Competences.html#DevApplication" title="Développement d'applications">DevApplication</a></li>
+                        <li><a href="Competences.html#BDD" title="Gestion de bases de données">BDD</a></li>
+                        <li><a href="Competences.html#Organisation" title="Organisation et gestion de projet">Organisation</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="Realisations.html" title="Consulter mes réalisations">Réalisations</a>
+                    <ul class="sous-menu" role="menu">
+                        <li><a href="Competences.html#Projet-BDD" title=Projet-BDD">Projet-BDD</a></li>
+                        <li><a href="Competences.html#Projet-JAVA" title="Projet-JAVA">Projet-JAVA</a></li>
+                    </ul>
+                </li>
+                <li><a href="Contact.html" title="Contactez-moi">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -32,29 +45,27 @@
         <div class="competence-grid">
             <div class="competence-card">
                 <img src="https://cdn.iconscout.com/icon/free/png-256/free-java-60-1174953.png?f=webp" alt="Java" />
-                <p>Maîtrise de la programmation orientée objet et des frameworks tels que Spring.</p>
+                <p>Maîtrise de java-17 et java-21</p>
             </div>
             <div class="competence-card">
                 <img src="https://seeklogo.com/images/J/javaee-logo-0729BC7470-seeklogo.com.png" alt="JavaEE" />
-                <p>Maîtrise de la programmation orientée objet et des frameworks tels que Spring.</p>
+                <p>Maîtrise de l'API JDBC, Java EE</p>
             </div>
             <div class="competence-card">
                 <img src="https://cdn.iconscout.com/icon/free/png-256/free-c-57-1175191.png?f=webp" alt="C" />
-                <p>Maîtrise de la programmation orientée objet et des frameworks tels que Spring.</p>
             </div>
             <div class="competence-card">
                 <img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-devextreme-multi-purpose-controls-html-javascript-3.png" alt="HTML-JS-CSS" />
-                <p>Développement d'applications interactives avec React.js et Node.js.</p>
             </div>
         </div>
-    </section> 
+    </section>
 
     <section id="BDD" class="competence-section">
         <h2>Base de Données</h2>
         <div class="competence-grid">
             <div class="competence-card">
-                <img src="https://cdn.iconscout.com/icon/free/png-256/free-postgresql-9-1175120.png" alt="SQL" />
-                <p>Modélisation, requêtage avancé et optimisation des performances.</p>
+                <img src="https://cdn.iconscout.com/icon/free/png-256/free-postgresql-9-1175120.png" alt="PostgreSQL" />
+                <p>Modélisation MCD et requêtage avancé</p>
             </div>
         </div>
     </section>
@@ -63,16 +74,13 @@
         <h2>Organisation</h2>
         <div class="competence-grid">
             <div class="competence-card">
-                <img src="https://cdn.iconscout.com/icon/free/png-256/free-git-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-language-pack-logos-icons-1175220.png" alt="git" />
-                <p>Pratiques Scrum et Kanban pour une gestion de projet efficace.</p>
+                <img src="https://cdn.iconscout.com/icon/free/png-256/free-git-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-language-pack-logos-icons-1175220.png" alt="Git" />
             </div>
             <div class="competence-card">
                 <img src="https://productfolio.com/wp-content/uploads/2019/07/agile-method.png" alt="Agilitee" />
-                <p>Planification et suivi des projets avec des outils comme Trello et Jira.</p>
             </div>
             <div class="competence-card">
                 <img src="https://cdn.iconscout.com/icon/free/png-256/free-gestion-3-148785.png" alt="Gestion de Projet" />
-                <p>Planification et suivi des projets avec des outils comme Trello et Jira.</p>
             </div>
         </div>
     </section>
@@ -81,7 +89,7 @@
   <!-- Pied de page -->
   <footer>
     <div class="container-introduction">
-      <p>&copy; 2024 Benjamin SERE | Contactez-moi à <a href="mailto:serebenjamin.tr@gmail.com">serebenjamin.tr@gmail.com</a></p>
+      <h3>&copy; 2024 Benjamin SERE | Contactez-moi à <a href="mailto:serebenjamin.tr@gmail.com">serebenjamin.tr@gmail.com</a></h3>
     </div>
   </footer>
 </body>
