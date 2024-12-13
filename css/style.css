@@ -143,10 +143,12 @@ nav ul li ul li a:hover {
 }
 
 .container-introduction {
+  flex-direction: column; /* Empile les éléments verticalement */
+  align-items: center; 
   text-align: center; /* Centre les enfants si non spécifiés */
   margin: 40px auto;
   padding: 20px;
-  max-width: 1000px;
+  max-width: 1000px; 
   background-color: #ecf0f1; /* Gris clair */
   border-radius: 20px;
   box-shadow: 0 10px 8px rgba(0, 0, 0, 0.25); /* Ombre plus douce et subtile */
@@ -164,6 +166,17 @@ nav ul li ul li a:hover {
 
 .container-introduction p {
   text-align: justify; /* Alignement justifié pour les paragraphes */
+}
+
+.container-introduction .img {
+  width: 40%; /* Ajuste la largeur de l'image */
+}
+
+.container-introduction .img img {
+  width: 100%; /* L'image occupe toute la largeur du conteneur */
+  height: auto; /* Maintien du ratio de l'image */
+  border-radius: 20px; /* Bord arrondi de l'image */
+  object-fit: cover; /* Couvre la zone de l'image sans déformation */
 }
 
 
@@ -437,6 +450,3 @@ button[type="submit"]:hover {
     display: none; /* Cache l'image lorsque l'écran est trop petit */
   }
 }
-
-
-
