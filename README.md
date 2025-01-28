@@ -22,4 +22,4 @@ Ce projet représente mon CV numérique, développé avec **HTML**, **CSS** et l
 
 1. Clonez le repository :
    ```bash
-   [git clone https://github.com/Benjamin-etu-lille/CV-numerique.git](https://github.com/Benjamin-etu-lille/Benjamin-etu-lille.github.io.git)
+   https://github.com/Benjamin-etu-lille/Benjamin-etu-lille.github.io.git
